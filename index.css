@@ -412,11 +412,43 @@ body ::-webkit-scrollbar-thumb:active {
   background-position-y: -32px;
 }
 
+.huzhu .bottom .play-button .style1 {
+  background: url(./images/player_bg.png);
+  background-position-x: -217px;
+  background-position-y: 6px;
+}
+
+.huzhu .bottom .play-button .style1:hover {
+  background: url(./images/player_bg.png);
+  background-position-x: -217px;
+  background-position-y: -26px;
+}
+
+.huzhu .bottom .play-button .style2 {
+  background: url(./images/player_bg.png);
+  background-position-x: -217px;
+  background-position-y: 6px;
+}
+
+.huzhu .bottom .play-button .style2:hover {
+  background: url(./images/player_bg.png);
+  background-position-x: -217px;
+  background-position-y: -26px;
+}
+
+.huzhu .bottom .play-button .style3 {
+  background: url(./images/player_bg.png);
+  background-position-x: -217px;
+  background-position-y: 6px;
+}
+
+.huzhu .bottom .play-button .style3:hover {
+  background: url(./images/player_bg.png);
+  background-position-x: -217px;
+  background-position-y: -26px;
+}
+
 .huzhu .bottom .play-button .style4 {
-  /*width: 36px;
-				height: 28px;
-				margin: 7px 0 0 3px;
-				float: left;*/
   background: url(./images/player_bg.png);
   background-position-x: -217px;
   background-position-y: 6px;
