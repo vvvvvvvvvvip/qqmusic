@@ -34,6 +34,7 @@ $(function(){
           }
         }else if(yangshi.className === 'style2'){
         	alert(2)
+        	console.log(database.length)
           var rd = Math.floor( Math.random()*database.length );
           onsongchange(rd);
         }
