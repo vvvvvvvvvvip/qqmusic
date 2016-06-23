@@ -437,7 +437,7 @@ body ::-webkit-scrollbar-thumb:active {
   position: absolute;
   margin: auto;
   left: 130px;
-  bottom: 8px;
+  bottom: 9px;
 }
 
 .huzhu .bottom .play-button .style-list .style1 {

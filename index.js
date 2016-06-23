@@ -18,6 +18,7 @@ $(function(){
 	})
 
 	var yangshi = document.getElementById('yangshi');
+	alert(11)
     $(audio).on('ended',function(){
         if( yangshi.className === 'style4'){
         	alert(4)
@@ -36,7 +37,7 @@ $(function(){
           onsongchange(rd);
         }
     }) 
-    
+
 	var audio = $('audio').get(0);
 	$('#stop').on('click',function(){
 		if(audio.paused){
