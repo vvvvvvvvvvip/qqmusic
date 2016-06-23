@@ -171,6 +171,7 @@ body ::-webkit-scrollbar-thumb:active {
   width: 561px;
   height: 115px;
   position: relative;
+  z-index: 100;
 }
 
 .huzhu {
