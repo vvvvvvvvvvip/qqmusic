@@ -48,6 +48,20 @@ body{
 }
 $basetheme:#1b1b1b;
 @include theme($basetheme)
+.play-button{
+			width: 280px;
+			height: 42px;
+			strong{
+				display: block;
+				width: 36px;
+				height: 28px;
+				float: left;
+				/*#yangshi{
+					width: 36px;
+				    height: 28px;
+				    float: left;
+				}*/
+			}
 #hidden{
 	width: 541px;
 	height: 507px;
