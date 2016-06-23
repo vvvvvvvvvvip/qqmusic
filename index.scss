@@ -1,0 +1,505 @@
+*{
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+}
+body,ul,li,h1,h2,h3,h4,h5,h6,p{
+	list-style: none;
+    font-family: Arial,Tahoma,"hiragino sans gb",Helvetica;
+
+}
+a{
+	text-decoration: none;
+}
+body{
+	::-webkit-scrollbar{width:14px;}
+::-webkit-scrollbar-track{background-color:#bee1eb;}
+::-webkit-scrollbar-thumb{background-color:#0CC65B;}
+::-webkit-scrollbar-thumb:hover {background-color:green;}
+::-webkit-scrollbar-thumb:active {background-color:#8E8E8E}
+}
+%like{
+	display: block;
+	width: 16px;
+	height: 15px;
+	margin-right: 2px;
+	display: inline-block;
+}
+/*$btn-primary-width : 541px; !default;*/
+@mixin dingwei($top:0,$left:0,$right:0,$bottom:0){
+	position: absolute;
+	margin: auto;
+	left:$left;
+	top:$top;
+	right:$right;
+	bottom:$bottom;
+}
+@mixin common{
+			color: #fff;
+			height: 52px;
+			background: #262626;
+			font-size: 18px;
+}
+@mixin theme($color){
+	.box{
+		background: $color;
+	}
+}
+$basetheme:#1b1b1b;
+@include theme($basetheme)
+#hidden{
+	width: 541px;
+	height: 507px;
+	display: block;
+	position: relative;
+	top:27px;
+	left: 0;
+	box-shadow: 3px 0 10px #717171;
+	background-color: #000;
+    /*width: 541px;
+    height: 507px;
+    position: absolute;
+    left: 0;
+    top: -507px;*/
+    z-index: 11;
+    box-shadow: 3px 3px 6px rgba(0,0,0,.42);
+	.top{
+		width:541px;
+		height: 52px;
+		line-height: 52px;
+		color: #fff;
+		background: #000;
+		%play{
+			float: left;
+			height: 52px;
+			padding: 0 20px;
+			background: #262626;
+		}
+		.play{
+			@extend %play;
+			width: 72px;
+			a{
+				font-size: 18px;
+				color: #fff;
+			}
+		}
+		.danqu{
+			@extend %play;
+			display: none;
+			width: 108px;
+		}
+		span{
+			font-size: 12px;
+			margin-right: 30px;
+			float: right;
+		}
+		.shou-list{
+			@include dingwei(3px,null,7px,null);
+			background: url(./images/player_bg.png) no-repeat -269px -97px;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+		}
+	}
+	.center{
+		overflow: overlay;
+		width: 541px;
+		height: 456px;
+	}
+}
+.play-list ul{
+	width: 529px;
+	height: 800px;
+	li.play-hover{
+		background: #1b1b1b;
+		color: green;
+	}
+	li{
+		width: 509px;
+		height: 23px;
+		line-height: 23px;
+		border-top: 1px;
+		padding-left: 20px;
+		color: #999;
+		margin: 2px 0 3px 0;
+		%li{
+			font-size: 12px;
+			display: block;
+			float: left;
+			height: 24px;
+		}
+		.btn-del{
+			position: relative;
+			top:2px;
+			left: -50%;
+			@extend %like;
+			background: url(./images/player_bg.png) -48px -127px;
+			&:hover{
+				background: url(./images/player_bg.png) -48px -145px;
+			};
+		}
+		.music-name{
+			@extend %li;
+			/*color: #999;*/
+			width: 254px;
+		};
+		.singer-name{
+			@extend %li;
+			/*color: #595959;*/
+			width: 180px;
+		};
+		.play-time{
+			@extend %li;
+			/*color: #595959;*/
+		}
+	}
+}
+#xiabian{
+	width: 561px;
+    height: 115px;
+    position: absolute;
+    bottom: 20px;
+}
+.huzhu{
+	width: 541px;
+	height: 115px;
+	left: 0;
+	.action{
+		width: 541px;
+		@include dingwei(null,0,null,3px)
+		height: 4px;
+		background: #323232;
+		.current{
+			width: 81px;
+			height: 4px;
+			position: absolute;
+			z-index: 3;
+			background: #0cc65b;
+		}
+		.quan2{
+			width: 7px ;
+			height: 6px;
+			background: url(./images/progress_op.png);
+			@include dingwei(-1px,80px,null,null)
+		}
+	}
+	.bottom{
+		position: absolute;
+		left: 0;
+		width: 541px;
+		height: 111px;
+		background: #000;
+		.left-pic{
+			float: left;
+			width: 110px;
+			display: block;
+			img{
+				margin: 10px;
+				width: 90px;
+				height: 90px;
+			}
+		}
+		.music-info{
+			width: 380px;
+			height: 80px;
+			float: left;
+			color: #fff;
+			line-height: 20px;
+			font-size: 12px;
+			%music{
+				width: 300px;
+				height: 20px;
+				margin: 5px 0;
+			}
+			p.music-pre{
+				@extend %music;
+				span{
+					float: left;
+				}
+				a{
+					display: block;
+					width: 75px;
+					height: 20px;
+					float: left;
+					margin-left: 10px;
+					background: url(./images/player_bg.png) -453px -55px;
+				}
+			}
+			.pre2{
+				width: 120px;
+				height: 20px;
+				color: #828282;
+			}
+			.music-data{
+				@extend %music;
+				color: #595959;
+			}
+			.like{
+				@extend %music;
+				.like1{
+					@extend %like;
+					background: url(./images/player_bg.png) 0 -127px;
+					&:hover{
+						background: url(./images/player_bg.png) 0 -145px;
+					};
+				};
+				.like2{
+					@extend %like;
+					background: url(./images/player_bg.png) -16px -127px;
+					&:hover{
+						background: url(./images/player_bg.png) -16px -145px;
+					};
+				}
+			}
+		}
+		.play-list-icon{
+			display: block;
+			width: 47px;
+			height: 28px;
+			@include dingwei(0,null,61px,null)
+			background: url(./images/player_bg.png) -222px -97px;
+			span{
+				width: 24px;
+				height: 28px;
+				color: #fff;
+				font-size: 12px;
+				font-weight: bold;
+				display: inline-block;
+				margin-left: 23px;
+				line-height: 28px;
+				text-align: center;
+			}
+		}
+		.lyric{
+			display: block;
+			width: 14px;
+			height: 14px;
+			@include dingwei(7px,null,31px,null)
+			background: url(./images/player_bg.png) -452px 0;
+		}
+		.play-button{
+			width: 280px;
+			height: 42px;
+			@include dingwei(43px,248px,null,null)
+			.pre{
+				display: block;
+				width: 36px;
+				height: 28px;
+				margin: 7px 0 0 3px;
+				float: left;
+				background: url(./images/player_bg.png);
+				background-position-x: -69px;
+				background-position-y: 0px;
+				&:hover{
+					background: url(./images/player_bg.png);
+					background-position-x: -69px;
+					background-position-y: -32px;
+				}
+			}
+			.play-bt{
+				display: block;
+				width: 42px;
+				height: 42px;
+				float: left;
+				margin: 0 0 0 3px;
+				background: url(./images/player_bg.png);
+				background-position-x: -102px;
+				background-position-y: 0px;
+				&:hover{
+					background: url(./images/player_bg.png);
+					background-position-x: -102px;
+					background-position-y: -42px;
+				};
+			}
+			.pause-bt{
+				display: block;
+				width: 42px;
+				height: 42px;
+				float: left;
+				margin: 0 0 0 3px;
+				background: url(./images/player_bg.png);
+				background-position-x: -291px;
+				background-position-y: -88px;
+				&:hover{
+					background: url(./images/player_bg.png);
+					background-position-x: -333px;
+					background-position-y: -88px;
+				};
+			}
+			.next{
+				display: block;
+				width: 36px;
+				height: 28px;
+				float: left;
+				margin: 7px 0 0 3px;
+				background: url(./images/player_bg.png);
+				background-position-x: -147px;
+				background-position-y: 0px;
+				&:hover{
+					background: url(./images/player_bg.png);
+					background-position-x: -147px;
+					background-position-y: -32px;
+				};
+			}
+			.style{
+				width: 36px;
+				height: 28px;
+				margin: 7px 0 0 3px;
+				float: left;
+				background: url(./images/player_bg.png);
+				background-position-x: -217px;
+				background-position-y:0;
+				&:hover{
+					background: url(./images/player_bg.png);
+					background-position-x: -217px;
+					background-position-y:-32px;
+				}
+			}
+			.style-list{
+				width: 32px;
+				height: 88px;
+				padding: 5px 0;
+				background: #383838;
+				z-index: 11;
+				@include dingwei(null,130px,null,8px);
+				.style1{
+					display: block;
+					width: 32px;
+					height: 22px;
+					float: left;
+					background: url(./images/player_bg.png);
+					background-position-x: -408px;
+					background-position-y:0;
+					&:hover{
+						background: url(./images/player_bg.png);
+						background-position-x: -408px;
+						background-position-y:-22px;
+					}
+				};
+				.style2{
+					display: block;
+					width: 32px;
+					height: 22px;
+					float: left;
+					background: url(./images/player_bg.png);
+					background-position-x: -408px;
+					background-position-y:-44px;
+					&:hover{
+						background: url(./images/player_bg.png);
+						background-position-x: -408px;
+						background-position-y:-66px;
+					}
+				};
+				.style3{
+					display: block;
+					width: 32px;
+					height: 22px;
+					float: left;
+					background: url(./images/player_bg.png);
+					background-position-x: -376px;
+					background-position-y:0;
+					&:hover{
+						background: url(./images/player_bg.png);
+						background-position-x: -376px;
+						background-position-y:-22px;
+					}
+				};
+				.style4{
+					display: block;
+					width: 32px;
+					height: 22px;
+					float: left;
+					background: url(./images/player_bg.png);
+					background-position-x: -376px;
+					background-position-y:-41px;
+					&:hover{
+						background: url(./images/player_bg.png);
+						background-position-x: -376px;
+						background-position-y:-63px;
+					}
+				};
+			}
+			.voice{
+				width: 100px;
+				height: 24px;
+				float: left;
+				margin: 10px 0 0 8px;
+				.volume-y{
+					width: 24px;
+					height: 24px;
+					float: left;
+					background: url(./images/player_bg.png);
+					background-position-x: -189px;
+					background-position-y: -3px;
+					&:hover{
+						background: url(./images/player_bg.png);
+						background-position-x: -189px;
+						background-position-y: -35px;
+					};
+				}
+				.volume-n{
+					width: 24px;
+					height: 24px;
+					float: left;
+					background: url(./images/player_bg.png);
+					background-position-x: -152px;
+					background-position-y: -63px;
+					&:hover{
+						background: url(./images/player_bg.png);
+						background-position-x: -189px;
+						background-position-y: -63px;
+					};
+				}
+				.yl{
+					width: 71px;
+					height: 11px;
+					float: left;
+					position: relative;
+					top:6px;
+					left:3px;
+					background: url(./images/player_bg.png);
+					background-position-x: -291px;
+					background-position-y: -11px;
+					.volume{
+						width: 38px;
+						height: 11px;
+						float: left;
+						background: url(./images/player_bg.png);
+						background-position-x: -291px;
+						background-position-y: 0px;
+					}
+					.yl-quan{
+						width: 6px;
+						height: 11px;
+						float: left;
+						@include dingwei(0,38px,null,null);
+						background: url(./images/player_bg.png);
+						background-position-x: -366px;
+						background-position-y: 0px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.close-list{
+		border: none;
+		display: block;
+		width: 12px;
+		height: 113px;
+		padding: 1px 10px;
+    	@include dingwei(2px,null,0,null);
+        border-radius: 4px;
+        background: url(./images/player_bg.png) -3px -5px;
+	}
+.gui{
+	border: none;
+	display: block;
+	/*width: 12px;
+	height: 113px;
+	padding: 1px 10px;*/
+    left:-541px;
+    border-radius: 4px;
+    background: url(./images/player_bg.png) -24px 0;
+}

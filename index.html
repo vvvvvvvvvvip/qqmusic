@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>css3</title>
+	<link rel="stylesheet" href="index.css">
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="index.js"></script>
+</head>
+<body>
+	<div class="box">
+		<div id="hidden">
+			<ul class="top">
+				<li class="play">
+					<a href="#">播放列表</a>
+				</li>
+				<li class="danqu">
+					<a href="#">单曲电台列表</a>
+				</li>
+				<span class="empty">清空列表</span>
+				<strong class="shou-list"></strong>
+			</ul>
+			<div class="center">
+				<div class="play-list">
+					<ul id="ul">
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="xiabian">
+	    <div class="huzhu">
+		<div class="bottom">
+			<a href="#" class="left-pic">
+				<img src="./images/a.jpg" alt="">
+			</a>
+			<div class="music-info">
+				<p class="music-pre">
+					<span class="music-name1">听我想听的歌</span>
+					<a href="#" class="music-radio"></a>
+				</p>
+				<p class="pre2">qq音乐</p>
+				<p class="music-data">1:43</p>
+				<p class="like">
+					<strong class="like1"></strong>
+					<strong class="like2"></strong>
+				</p>
+			</div>
+			<!-- 			<div class="right"> -->
+			<span class="play-list-icon">
+				<!-- <span>2</span> -->
+			</span>
+			<span class="lyric">
+			</span>
+			<!-- 			</div> -->
+			
+			<div class="play-button">
+				<strong class="pre"></strong>
+				<strong class="button play-bt" id="stop"></strong>
+				<strong class="next"></strong>
+				<strong class="style" id="yangshi"></strong>
+				<div class="style-list" style="display:none">
+					<div class="style1" id="yangshi1"></div>
+					<div class="style2" id="yangshi2"></div>
+					<div class="style3" id="yangshi3"></div>
+					<div class="style4" id="yangshi4"></div>
+				</div>
+				<strong></strong>
+				<div class="voice">
+					<div id="yinliang" class="volume-y"></div>
+					<div class="yl">
+						<div class="volume"></div>
+						<div class="yl-quan"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="action">
+			<div class="current"></div>
+			<div class="quan2"></div>
+		</div>
+	    </div>
+		<button class="close-list">
+				<span></span>
+		</button>
+	    </div>
+		
+	</div>
+	<audio src="音频/
+	Blue.mp3"></audio>
+	<!-- var audio = document.querySelector('audio');
+	var current = document.querySelector('.current')
+	audio.ontimeupdate = function(){
+		var a = audio.currentTime/audio.duration;
+		var width = a.toFixed(2) * 100 + '%';
+		current.style.width = width;
+	} -->
+</body>
+</html>

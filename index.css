@@ -1,0 +1,583 @@
+* {
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+body, ul, li, h1, h2, h3, h4, h5, h6, p {
+  list-style: none;
+  font-family: Arial,Tahoma,"hiragino sans gb",Helvetica;
+}
+
+a {
+  text-decoration: none;
+}
+
+body ::-webkit-scrollbar {
+  width: 14px;
+}
+
+body ::-webkit-scrollbar-track {
+  background-color: #bee1eb;
+}
+
+body ::-webkit-scrollbar-thumb {
+  background-color: #0CC65B;
+}
+
+body ::-webkit-scrollbar-thumb:hover {
+  background-color: green;
+}
+
+body ::-webkit-scrollbar-thumb:active {
+  background-color: #8E8E8E;
+}
+
+.play-list ul li .btn-del, .huzhu .bottom .music-info .like .like1, .huzhu .bottom .music-info .like .like2 {
+  display: block;
+  width: 16px;
+  height: 15px;
+  margin-right: 2px;
+  display: inline-block;
+}
+
+/*$btn-primary-width : 541px; !default;*/
+.box {
+  background: #1b1b1b;
+}
+
+#hidden {
+  width: 541px;
+  height: 507px;
+  display: block;
+  position: relative;
+  top: 27px;
+  left: 0;
+  box-shadow: 3px 0 10px #717171;
+  background-color: #000;
+  /*width: 541px;
+    height: 507px;
+    position: absolute;
+    left: 0;
+    top: -507px;*/
+  z-index: 11;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.42);
+}
+
+#hidden .top {
+  width: 541px;
+  height: 52px;
+  line-height: 52px;
+  color: #fff;
+  background: #000;
+}
+
+#hidden .top .play, #hidden .top .danqu {
+  float: left;
+  height: 52px;
+  padding: 0 20px;
+  background: #262626;
+}
+
+#hidden .top .play {
+  width: 72px;
+}
+
+#hidden .top .play a {
+  font-size: 18px;
+  color: #fff;
+}
+
+#hidden .top .danqu {
+  display: none;
+  width: 108px;
+}
+
+#hidden .top span {
+  font-size: 12px;
+  margin-right: 30px;
+  float: right;
+}
+
+#hidden .top .shou-list {
+  position: absolute;
+  margin: auto;
+  top: 3px;
+  right: 7px;
+  background: url(./images/player_bg.png) no-repeat -269px -97px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+#hidden .center {
+  overflow: overlay;
+  width: 541px;
+  height: 456px;
+}
+
+.play-list ul {
+  width: 529px;
+  height: 800px;
+}
+
+.play-list ul li.play-hover {
+  background: #1b1b1b;
+  color: green;
+}
+
+.play-list ul li {
+  width: 509px;
+  height: 23px;
+  line-height: 23px;
+  border-top: 1px;
+  padding-left: 20px;
+  color: #999;
+  margin: 2px 0 3px 0;
+}
+
+.play-list ul li .music-name, .play-list ul li .singer-name, .play-list ul li .play-time {
+  font-size: 12px;
+  display: block;
+  float: left;
+  height: 24px;
+}
+
+.play-list ul li .btn-del {
+  position: relative;
+  top: 2px;
+  left: -50%;
+  background: url(./images/player_bg.png) -48px -127px;
+}
+
+.play-list ul li .btn-del:hover {
+  background: url(./images/player_bg.png) -48px -145px;
+}
+
+.play-list ul li .music-name {
+  /*color: #999;*/
+  width: 254px;
+}
+
+.play-list ul li .singer-name {
+  /*color: #595959;*/
+  width: 180px;
+}
+
+.play-list ul li .play-time {
+  /*color: #595959;*/
+}
+
+#xiabian {
+  width: 561px;
+  height: 115px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.huzhu {
+  width: 541px;
+  height: 115px;
+  left: 0;
+}
+
+.huzhu .action {
+  width: 541px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  bottom: 3px;
+  height: 4px;
+  background: #323232;
+}
+
+.huzhu .action .current {
+  width: 81px;
+  height: 4px;
+  position: absolute;
+  z-index: 3;
+  background: #0cc65b;
+}
+
+.huzhu .action .quan2 {
+  width: 7px;
+  height: 6px;
+  background: url(./images/progress_op.png);
+  position: absolute;
+  margin: auto;
+  left: 80px;
+  top: -1px;
+}
+
+.huzhu .bottom {
+  position: absolute;
+  left: 0;
+  width: 541px;
+  height: 111px;
+  background: #000;
+}
+
+.huzhu .bottom .left-pic {
+  float: left;
+  width: 110px;
+  display: block;
+}
+
+.huzhu .bottom .left-pic img {
+  margin: 10px;
+  width: 90px;
+  height: 90px;
+}
+
+.huzhu .bottom .music-info {
+  width: 380px;
+  height: 80px;
+  float: left;
+  color: #fff;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.huzhu .bottom .music-info p.music-pre, .huzhu .bottom .music-info .music-data, .huzhu .bottom .music-info .like {
+  width: 300px;
+  height: 20px;
+  margin: 5px 0;
+}
+
+.huzhu .bottom .music-info p.music-pre span {
+  float: left;
+}
+
+.huzhu .bottom .music-info p.music-pre a {
+  display: block;
+  width: 75px;
+  height: 20px;
+  float: left;
+  margin-left: 10px;
+  background: url(./images/player_bg.png) -453px -55px;
+}
+
+.huzhu .bottom .music-info .pre2 {
+  width: 120px;
+  height: 20px;
+  color: #828282;
+}
+
+.huzhu .bottom .music-info .music-data {
+  color: #595959;
+}
+
+.huzhu .bottom .music-info .like .like1 {
+  background: url(./images/player_bg.png) 0 -127px;
+}
+
+.huzhu .bottom .music-info .like .like1:hover {
+  background: url(./images/player_bg.png) 0 -145px;
+}
+
+.huzhu .bottom .music-info .like .like2 {
+  background: url(./images/player_bg.png) -16px -127px;
+}
+
+.huzhu .bottom .music-info .like .like2:hover {
+  background: url(./images/player_bg.png) -16px -145px;
+}
+
+.huzhu .bottom .play-list-icon {
+  display: block;
+  width: 47px;
+  height: 28px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 61px;
+  background: url(./images/player_bg.png) -222px -97px;
+}
+
+.huzhu .bottom .play-list-icon span {
+  width: 24px;
+  height: 28px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 23px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.huzhu .bottom .lyric {
+  display: block;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  margin: auto;
+  top: 7px;
+  right: 31px;
+  background: url(./images/player_bg.png) -452px 0;
+}
+
+.huzhu .bottom .play-button {
+  width: 280px;
+  height: 42px;
+  position: absolute;
+  margin: auto;
+  left: 248px;
+  top: 43px;
+}
+
+.huzhu .bottom .play-button .pre {
+  display: block;
+  width: 36px;
+  height: 28px;
+  margin: 7px 0 0 3px;
+  float: left;
+  background: url(./images/player_bg.png);
+  background-position-x: -69px;
+  background-position-y: 0px;
+}
+
+.huzhu .bottom .play-button .pre:hover {
+  background: url(./images/player_bg.png);
+  background-position-x: -69px;
+  background-position-y: -32px;
+}
+
+.huzhu .bottom .play-button .play-bt {
+  display: block;
+  width: 42px;
+  height: 42px;
+  float: left;
+  margin: 0 0 0 3px;
+  background: url(./images/player_bg.png);
+  background-position-x: -102px;
+  background-position-y: 0px;
+}
+
+.huzhu .bottom .play-button .play-bt:hover {
+  background: url(./images/player_bg.png);
+  background-position-x: -102px;
+  background-position-y: -42px;
+}
+
+.huzhu .bottom .play-button .pause-bt {
+  display: block;
+  width: 42px;
+  height: 42px;
+  float: left;
+  margin: 0 0 0 3px;
+  background: url(./images/player_bg.png);
+  background-position-x: -291px;
+  background-position-y: -88px;
+}
+
+.huzhu .bottom .play-button .pause-bt:hover {
+  background: url(./images/player_bg.png);
+  background-position-x: -333px;
+  background-position-y: -88px;
+}
+
+.huzhu .bottom .play-button .next {
+  display: block;
+  width: 36px;
+  height: 28px;
+  float: left;
+  margin: 7px 0 0 3px;
+  background: url(./images/player_bg.png);
+  background-position-x: -147px;
+  background-position-y: 0px;
+}
+
+.huzhu .bottom .play-button .next:hover {
+  background: url(./images/player_bg.png);
+  background-position-x: -147px;
+  background-position-y: -32px;
+}
+
+.huzhu .bottom .play-button .style {
+  width: 36px;
+  height: 28px;
+  margin: 7px 0 0 3px;
+  float: left;
+  background: url(./images/player_bg.png);
+  background-position-x: -217px;
+  background-position-y: 0;
+}
+
+.huzhu .bottom .play-button .style:hover {
+  background: url(./images/player_bg.png);
+  background-position-x: -217px;
+  background-position-y: -32px;
+}
+
+.huzhu .bottom .play-button .style-list {
+  width: 32px;
+  height: 88px;
+  padding: 5px 0;
+  background: #383838;
+  z-index: 11;
+  position: absolute;
+  margin: auto;
+  left: 130px;
+  bottom: 8px;
+}
+
+.huzhu .bottom .play-button .style-list .style1 {
+  display: block;
+  width: 32px;
+  height: 22px;
+  float: left;
+  background: url(./images/player_bg.png);
+  background-position-x: -408px;
+  background-position-y: 0;
+}
+
+.huzhu .bottom .play-button .style-list .style1:hover {
+  background: url(./images/player_bg.png);
+  background-position-x: -408px;
+  background-position-y: -22px;
+}
+
+.huzhu .bottom .play-button .style-list .style2 {
+  display: block;
+  width: 32px;
+  height: 22px;
+  float: left;
+  background: url(./images/player_bg.png);
+  background-position-x: -408px;
+  background-position-y: -44px;
+}
+
+.huzhu .bottom .play-button .style-list .style2:hover {
+  background: url(./images/player_bg.png);
+  background-position-x: -408px;
+  background-position-y: -66px;
+}
+
+.huzhu .bottom .play-button .style-list .style3 {
+  display: block;
+  width: 32px;
+  height: 22px;
+  float: left;
+  background: url(./images/player_bg.png);
+  background-position-x: -376px;
+  background-position-y: 0;
+}
+
+.huzhu .bottom .play-button .style-list .style3:hover {
+  background: url(./images/player_bg.png);
+  background-position-x: -376px;
+  background-position-y: -22px;
+}
+
+.huzhu .bottom .play-button .style-list .style4 {
+  display: block;
+  width: 32px;
+  height: 22px;
+  float: left;
+  background: url(./images/player_bg.png);
+  background-position-x: -376px;
+  background-position-y: -41px;
+}
+
+.huzhu .bottom .play-button .style-list .style4:hover {
+  background: url(./images/player_bg.png);
+  background-position-x: -376px;
+  background-position-y: -63px;
+}
+
+.huzhu .bottom .play-button .voice {
+  width: 100px;
+  height: 24px;
+  float: left;
+  margin: 10px 0 0 8px;
+}
+
+.huzhu .bottom .play-button .voice .volume-y {
+  width: 24px;
+  height: 24px;
+  float: left;
+  background: url(./images/player_bg.png);
+  background-position-x: -189px;
+  background-position-y: -3px;
+}
+
+.huzhu .bottom .play-button .voice .volume-y:hover {
+  background: url(./images/player_bg.png);
+  background-position-x: -189px;
+  background-position-y: -35px;
+}
+
+.huzhu .bottom .play-button .voice .volume-n {
+  width: 24px;
+  height: 24px;
+  float: left;
+  background: url(./images/player_bg.png);
+  background-position-x: -152px;
+  background-position-y: -63px;
+}
+
+.huzhu .bottom .play-button .voice .volume-n:hover {
+  background: url(./images/player_bg.png);
+  background-position-x: -189px;
+  background-position-y: -63px;
+}
+
+.huzhu .bottom .play-button .voice .yl {
+  width: 71px;
+  height: 11px;
+  float: left;
+  position: relative;
+  top: 6px;
+  left: 3px;
+  background: url(./images/player_bg.png);
+  background-position-x: -291px;
+  background-position-y: -11px;
+}
+
+.huzhu .bottom .play-button .voice .yl .volume {
+  width: 38px;
+  height: 11px;
+  float: left;
+  background: url(./images/player_bg.png);
+  background-position-x: -291px;
+  background-position-y: 0px;
+}
+
+.huzhu .bottom .play-button .voice .yl .yl-quan {
+  width: 6px;
+  height: 11px;
+  float: left;
+  position: absolute;
+  margin: auto;
+  left: 38px;
+  top: 0;
+  background: url(./images/player_bg.png);
+  background-position-x: -366px;
+  background-position-y: 0px;
+}
+
+.close-list {
+  border: none;
+  display: block;
+  width: 12px;
+  height: 113px;
+  padding: 1px 10px;
+  position: absolute;
+  margin: auto;
+  top: 2px;
+  right: 0;
+  border-radius: 4px;
+  background: url(./images/player_bg.png) -3px -5px;
+}
+
+.gui {
+  border: none;
+  display: block;
+  /*width: 12px;
+	height: 113px;
+	padding: 1px 10px;*/
+  left: -541px;
+  border-radius: 4px;
+  background: url(./images/player_bg.png) -24px 0;
+}
