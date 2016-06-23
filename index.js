@@ -40,11 +40,11 @@ $(function(){
     }) 
     
 
-    var nextsong = function(){
-        currentsong  += 1;
-        currentsong   = (currentsong == database.length)?0:currentsong;
-        onsongchange(currentsong);
-      };
+    // var nextsong = function(){
+    //     currentsong  += 1;
+    //     currentsong   = (currentsong == database.length)?0:currentsong;
+    //     onsongchange(currentsong);
+    //   };
 
 	// var audio = $('audio').get(0);
 	$('#stop').on('click',function(){
