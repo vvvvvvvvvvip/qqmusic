@@ -328,12 +328,14 @@ body ::-webkit-scrollbar-thumb:active {
 
 .huzhu .bottom .play-button strong {
   display: block;
-}
-
-.huzhu .bottom .play-button strong #yangshi {
   width: 36px;
   height: 28px;
   float: left;
+  /*#yangshi{
+					width: 36px;
+				    height: 28px;
+				    float: left;
+				}*/
 }
 
 .huzhu .bottom .play-button .pre {
@@ -404,17 +406,17 @@ body ::-webkit-scrollbar-thumb:active {
   background-position-y: -32px;
 }
 
-.huzhu .bottom .play-button .style3 {
-  width: 36px;
-  height: 28px;
-  margin: 7px 0 0 3px;
-  float: left;
+.huzhu .bottom .play-button .style4 {
+  /*width: 36px;
+				height: 28px;
+				margin: 7px 0 0 3px;
+				float: left;*/
   background: url(./images/player_bg.png);
   background-position-x: -217px;
   background-position-y: 0;
 }
 
-.huzhu .bottom .play-button .style3:hover {
+.huzhu .bottom .play-button .style4:hover {
   background: url(./images/player_bg.png);
   background-position-x: -217px;
   background-position-y: -32px;

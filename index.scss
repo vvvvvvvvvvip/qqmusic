@@ -282,11 +282,14 @@ $basetheme:#1b1b1b;
 			height: 42px;
 			strong{
 				display: block;
-				#yangshi{
+				width: 36px;
+				height: 28px;
+				float: left;
+				/*#yangshi{
 					width: 36px;
 				    height: 28px;
 				    float: left;
-				}
+				}*/
 			}
 			@include dingwei(43px,248px,null,null)
 			.pre{
@@ -349,11 +352,11 @@ $basetheme:#1b1b1b;
 					background-position-y: -32px;
 				};
 			}
-			.style3{
-				width: 36px;
+			.style4{
+				/*width: 36px;
 				height: 28px;
 				margin: 7px 0 0 3px;
-				float: left;
+				float: left;*/
 				background: url(./images/player_bg.png);
 				background-position-x: -217px;
 				background-position-y:0;
