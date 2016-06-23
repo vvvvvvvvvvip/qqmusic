@@ -47,6 +47,23 @@ body ::-webkit-scrollbar-thumb:active {
   height: 645px;
 }
 
+.play-button {
+  width: 280px;
+  height: 42px;
+}
+
+.play-button strong {
+  display: block;
+  width: 36px;
+  height: 28px;
+  float: left;
+  /*#yangshi{
+					width: 36px;
+				    height: 28px;
+				    float: left;
+				}*/
+}
+
 #hidden {
   width: 541px;
   height: 507px;
