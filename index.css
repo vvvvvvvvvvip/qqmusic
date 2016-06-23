@@ -327,6 +327,9 @@ body ::-webkit-scrollbar-thumb:active {
 
 .huzhu .bottom .play-button strong {
   display: block;
+}
+
+.huzhu .bottom .play-button strong #yanghshi {
   width: 36px;
   height: 28px;
   float: left;
