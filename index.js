@@ -169,5 +169,26 @@ $(function(){
 
     $('.style3').on('click',function(){
     	$('#yangshi').removeClass('style').addClass('style3');
-    })	// 播放模式
+    })	
+    // 播放模式
+    var yangshi = document.getElementById('yangshi');
+    $(audio).on('ended',function(){
+        if( yangshi.className === 'style4'){
+          nextsong();
+        }else if(yangshi.className === 'style3'){
+          onsongchange(currentsong);
+        }else if(yangshi.className === 'style1'){
+          if(currentsong != database.length-1){
+            nextsong();
+          }
+        }else if(yangshi.className === 'style2'){
+          var rd = Math.floor( Math.random()*database.length );
+          onsongchange(rd);
+        }
+    }) 
+
+    $('.style-list').on('click','span',function(){
+        $('.style-list').css('display','none');
+        yangshi.className = this.className;
+    })
 })
