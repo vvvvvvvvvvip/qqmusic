@@ -365,8 +365,8 @@ $basetheme:#1b1b1b;
                 top: 6px;    
 				&:hover{
 					background: url(./images/player_bg.png);
-					background-position-x: -217px;
-					background-position-y:-59px;
+					background-position-x: -288px;
+					background-position-y:-58px;
 				}
 			}
 			.style2{
@@ -446,9 +446,10 @@ $basetheme:#1b1b1b;
 					background-position-x: -352px;
 					background-position-y:3px;
 					&:hover{
+					    background-size: 750px auto;
 						background: url(./images/player_bg.png);
 						background-position-x: -352px;
-						background-position-y:-19px;
+						background-position-y:-17px;
 					}
 				};
 				.style4{

@@ -422,8 +422,8 @@ body ::-webkit-scrollbar-thumb:active {
 
 .huzhu .bottom .play-button .style1:hover {
   background: url(./images/player_bg.png);
-  background-position-x: -217px;
-  background-position-y: -59px;
+  background-position-x: -288px;
+  background-position-y: -58px;
 }
 
 .huzhu .bottom .play-button .style2 {
@@ -520,9 +520,10 @@ body ::-webkit-scrollbar-thumb:active {
 }
 
 .huzhu .bottom .play-button .style-list .style3:hover {
+  background-size: 750px auto;
   background: url(./images/player_bg.png);
   background-position-x: -352px;
-  background-position-y: -19px;
+  background-position-y: -17px;
 }
 
 .huzhu .bottom .play-button .style-list .style4 {
