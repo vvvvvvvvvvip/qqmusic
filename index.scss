@@ -357,11 +357,37 @@ $basetheme:#1b1b1b;
 					background-position-y: -32px;
 				};
 			}
+			.style1{
+				background: url(./images/player_bg.png);
+				background-position-x: -217px;
+				background-position-y:6px;
+				&:hover{
+					background: url(./images/player_bg.png);
+					background-position-x: -217px;
+					background-position-y:-26px;
+				}
+			}
+			.style2{
+				background: url(./images/player_bg.png);
+				background-position-x: -217px;
+				background-position-y:6px;
+				&:hover{
+					background: url(./images/player_bg.png);
+					background-position-x: -217px;
+					background-position-y:-26px;
+				}
+			}
+			.style3{
+				background: url(./images/player_bg.png);
+				background-position-x: -217px;
+				background-position-y:6px;
+				&:hover{
+					background: url(./images/player_bg.png);
+					background-position-x: -217px;
+					background-position-y:-26px;
+				}
+			}
 			.style4{
-				/*width: 36px;
-				height: 28px;
-				margin: 7px 0 0 3px;
-				float: left;*/
 				background: url(./images/player_bg.png);
 				background-position-x: -217px;
 				background-position-y:6px;
@@ -377,7 +403,7 @@ $basetheme:#1b1b1b;
 				padding: 5px 0;
 				background: #383838;
 				z-index: 11;
-				@include dingwei(null,130px,null,9px);
+				@include dingwei(null,135px,null,9px);
 				.style1{
 					display: block;
 					width: 32px;

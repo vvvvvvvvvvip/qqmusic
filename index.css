@@ -436,7 +436,7 @@ body ::-webkit-scrollbar-thumb:active {
   z-index: 11;
   position: absolute;
   margin: auto;
-  left: 130px;
+  left: 135px;
   bottom: 9px;
 }
 
