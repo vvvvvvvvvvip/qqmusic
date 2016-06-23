@@ -178,10 +178,12 @@ $(function(){
         }else if(yangshi.className === 'style3'){
           onsongchange(currentsong);
         }else if(yangshi.className === 'style1'){
+        	alert(1)
           if(currentsong != database.length-1){
             nextsong();
           }
         }else if(yangshi.className === 'style2'){
+        	alert(2)
           var rd = Math.floor( Math.random()*database.length );
           onsongchange(rd);
         }
