@@ -41,11 +41,11 @@ $(function(){
     }) 
     
 
-    // var nextsong = function(){
-    //     currentsong  += 1;
-    //     currentsong   = (currentsong == database.length)?0:currentsong;
-    //     onsongchange(currentsong);
-    //   };
+    var nextsong = function(){
+        currentsong  += 1;
+        currentsong   = (currentsong == database.length)?0:currentsong;
+        onsongchange(currentsong);
+      };
 
 	// var audio = $('audio').get(0);
 	$('#stop').on('click',function(){
@@ -105,7 +105,9 @@ $(function(){
     $('.shou-list').on('click',yincang)
     //列表中当前歌曲切换下一首
     var currentsong = 0;
-    var onsongchange = function(){
+    var onsongchange = function(a){
+    	var b = a || currentsong;
+        audio.src = database[ b ].filename;
     	audio.play();
         // $('#ul li').removeClass('play_current');
         // alert(1)
