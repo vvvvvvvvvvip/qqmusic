@@ -172,7 +172,7 @@ $basetheme:#1b1b1b;
 			width: 81px;
 			height: 4px;
 			position: absolute;
-			z-index: 3;
+			z-index: 10;
 			background: #0cc65b;
 		}
 		.quan2{
@@ -180,6 +180,7 @@ $basetheme:#1b1b1b;
 			height: 6px;
 			background: url(./images/progress_op.png);
 			@include dingwei(-1px,80px,null,null)
+			z-index: 10;
 		}
 	}
 	.bottom{
