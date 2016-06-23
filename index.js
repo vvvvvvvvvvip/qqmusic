@@ -174,8 +174,10 @@ $(function(){
     var yangshi = document.getElementById('yangshi');
     $(audio).on('ended',function(){
         if( yangshi.className === 'style4'){
+        	alert(4)
           nextsong();
         }else if(yangshi.className === 'style3'){
+        	alert(3)
           onsongchange(currentsong);
         }else if(yangshi.className === 'style1'){
         	alert(1)
