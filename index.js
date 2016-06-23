@@ -167,9 +167,9 @@ $(function(){
     	$('.style-list').toggle();
     })
 
-    $('.style3').on('click',function(){
-    	$('#yangshi').removeClass('style').addClass('style3');
-    })	
+    // $('.style3').on('click',function(){
+    // 	$('#yangshi').removeClass('style').addClass('style3');
+    // })	
     // 播放模式
     var yangshi = document.getElementById('yangshi');
     $(audio).on('ended',function(){
