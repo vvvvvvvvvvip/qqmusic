@@ -44,6 +44,7 @@ body ::-webkit-scrollbar-thumb:active {
 /*$btn-primary-width : 541px; !default;*/
 .box {
   background: #1b1b1b;
+  height: 661px;
 }
 
 #hidden {
