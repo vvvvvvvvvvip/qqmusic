@@ -55,7 +55,7 @@ body ::-webkit-scrollbar-thumb:active {
 .play-button strong {
   display: block;
   width: 36px;
-  height: 28px;
+  height: 30px;
   float: left;
   /*#yangshi{
 					width: 36px;
@@ -343,18 +343,6 @@ body ::-webkit-scrollbar-thumb:active {
   top: 43px;
 }
 
-.huzhu .bottom .play-button strong {
-  display: block;
-  width: 36px;
-  height: 28px;
-  float: left;
-  /*#yangshi{
-					width: 36px;
-				    height: 28px;
-				    float: left;
-				}*/
-}
-
 .huzhu .bottom .play-button .pre {
   display: block;
   width: 36px;
@@ -518,8 +506,8 @@ body ::-webkit-scrollbar-thumb:active {
 .huzhu .bottom .play-button .voice {
   width: 100px;
   height: 24px;
-  float: left;
-  margin: 10px 0 0 8px;
+  float: right;
+  margin: -18px 0 0 8px;
 }
 
 .huzhu .bottom .play-button .voice .volume-y {
