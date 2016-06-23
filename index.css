@@ -425,7 +425,7 @@ body ::-webkit-scrollbar-thumb:active {
 .huzhu .bottom .play-button .style4:hover {
   background: url(./images/player_bg.png);
   background-position-x: -217px;
-  background-position-y: -32px;
+  background-position-y: -25px;
 }
 
 .huzhu .bottom .play-button .style-list {
@@ -508,7 +508,7 @@ body ::-webkit-scrollbar-thumb:active {
   width: 100px;
   height: 24px;
   float: right;
-  margin: -18px 0 0 8px;
+  margin: -20px 0 0 8px;
 }
 
 .huzhu .bottom .play-button .voice .volume-y {
