@@ -44,7 +44,7 @@ body ::-webkit-scrollbar-thumb:active {
 /*$btn-primary-width : 541px; !default;*/
 .box {
   background: #1b1b1b;
-  height: 661px;
+  height: 645px;
 }
 
 #hidden {
@@ -173,7 +173,7 @@ body ::-webkit-scrollbar-thumb:active {
   width: 561px;
   height: 115px;
   position: absolute;
-  bottom: 20px;
+  top: 531px;
 }
 
 .huzhu {
