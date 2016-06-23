@@ -186,7 +186,9 @@ $(function(){
           onsongchange(rd);
         }
     }) 
-
+     $(yangshi).on('click',function(){
+        $('.style-list').css('display','block');
+    })
     $('.style-list').on('click','span',function(){
         $('.style-list').css('display','none');
         yangshi.className = this.className;

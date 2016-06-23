@@ -279,6 +279,12 @@ $basetheme:#1b1b1b;
 		.play-button{
 			width: 280px;
 			height: 42px;
+			strong{
+				display: block;
+				width: 36px;
+				height: 28px;
+				float: left;
+			}
 			@include dingwei(43px,248px,null,null)
 			.pre{
 				display: block;

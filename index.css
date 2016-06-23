@@ -325,6 +325,13 @@ body ::-webkit-scrollbar-thumb:active {
   top: 43px;
 }
 
+.huzhu .bottom .play-button strong {
+  display: block;
+  width: 36px;
+  height: 28px;
+  float: left;
+}
+
 .huzhu .bottom .play-button .pre {
   display: block;
   width: 36px;
