@@ -16,6 +16,27 @@ $(function(){
 		database=data;
 		render()
 	})
+
+	var yangshi = document.getElementById('yangshi');
+    $(audio).on('ended',function(){
+        if( yangshi.className === 'style4'){
+        	alert(4)
+          nextsong();
+        }else if(yangshi.className === 'style3'){
+        	alert(3)
+          onsongchange(currentsong);
+        }else if(yangshi.className === 'style1'){
+        	alert(1)
+          if(currentsong != database.length-1){
+            nextsong();
+          }
+        }else if(yangshi.className === 'style2'){
+        	alert(2)
+          var rd = Math.floor( Math.random()*database.length );
+          onsongchange(rd);
+        }
+    }) 
+    
 	var audio = $('audio').get(0);
 	$('#stop').on('click',function(){
 		if(audio.paused){
@@ -171,25 +192,7 @@ $(function(){
     // 	$('#yangshi').removeClass('style').addClass('style3');
     // })	
     // 播放模式
-    var yangshi = document.getElementById('yangshi');
-    $(audio).on('ended',function(){
-        if( yangshi.className === 'style4'){
-        	alert(4)
-          nextsong();
-        }else if(yangshi.className === 'style3'){
-        	alert(3)
-          onsongchange(currentsong);
-        }else if(yangshi.className === 'style1'){
-        	alert(1)
-          if(currentsong != database.length-1){
-            nextsong();
-          }
-        }else if(yangshi.className === 'style2'){
-        	alert(2)
-          var rd = Math.floor( Math.random()*database.length );
-          onsongchange(rd);
-        }
-    }) 
+
      $(yangshi).on('click',function(){
         $('.style-list').css('display','block');
     })
