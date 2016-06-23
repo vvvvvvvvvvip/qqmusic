@@ -57,6 +57,7 @@ body ::-webkit-scrollbar-thumb:active {
   width: 36px;
   height: 30px;
   float: left;
+  margin-left: 8px;
   /*#yangshi{
 					width: 36px;
 				    height: 28px;
@@ -418,7 +419,7 @@ body ::-webkit-scrollbar-thumb:active {
 				float: left;*/
   background: url(./images/player_bg.png);
   background-position-x: -217px;
-  background-position-y: 0;
+  background-position-y: 6px;
 }
 
 .huzhu .bottom .play-button .style4:hover {
