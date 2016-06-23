@@ -20,6 +20,7 @@ $(function(){
 	var yangshi = document.getElementById('yangshi');
 	alert(11)
     $(audio).on('ended',function(){
+    	alert(12)
         if( yangshi.className === 'style4'){
         	alert(4)
           nextsong();

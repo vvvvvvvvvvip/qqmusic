@@ -522,8 +522,8 @@ body ::-webkit-scrollbar-thumb:active {
 .huzhu .bottom .play-button .style-list .style3:hover {
   background-size: 750px auto;
   background: url(./images/player_bg.png);
-  background-position-x: -352px;
-  background-position-y: -17px;
+  background-position-x: -375px;
+  background-position-y: -20px;
 }
 
 .huzhu .bottom .play-button .style-list .style4 {
