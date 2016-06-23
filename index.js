@@ -1,4 +1,5 @@
 $(function(){
+	var audio = $('audio').get(0);
     var database=[];
 	var render = function(){
 	$.each(database,function(k,v){
@@ -39,7 +40,7 @@ $(function(){
         }
     }) 
 
-	var audio = $('audio').get(0);
+	// var audio = $('audio').get(0);
 	$('#stop').on('click',function(){
 		if(audio.paused){
 			audio.play()
