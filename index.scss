@@ -47,6 +47,9 @@ body{
 }
 $basetheme:#1b1b1b;
 @include theme($basetheme)
+.box{
+	height: 661px;
+}
 #hidden{
 	width: 541px;
 	height: 507px;
