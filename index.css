@@ -52,8 +52,6 @@ body ::-webkit-scrollbar-thumb:active {
   height: 507px;
   display: block;
   position: relative;
-  top: 27px;
-  left: 0;
   box-shadow: 3px 0 10px #717171;
   background-color: #000;
   /*width: 541px;
@@ -172,8 +170,7 @@ body ::-webkit-scrollbar-thumb:active {
 #xiabian {
   width: 561px;
   height: 115px;
-  position: absolute;
-  top: 531px;
+  position: relative;
 }
 
 .huzhu {
