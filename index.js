@@ -19,7 +19,7 @@ $(function(){
 	})
 
 	var yangshi = document.getElementById('yangshi');
-	$(audio).onended = function(){
+    $(audio).on('ended',function(){
     	alert(12)
         if( yangshi.className === 'style4'){
         	alert(4)
@@ -37,7 +37,14 @@ $(function(){
           var rd = Math.floor( Math.random()*database.length );
           onsongchange(rd);
         }
-    } 
+    }) 
+    
+
+    var nextsong = function(){
+        currentsong  += 1;
+        currentsong   = (currentsong == database.length)?0:currentsong;
+        onsongchange(currentsong);
+      };
 
 	// var audio = $('audio').get(0);
 	$('#stop').on('click',function(){
@@ -136,6 +143,7 @@ $(function(){
 		audio.src = database[ currentsong ].filename;
 		onsongchange();
 	})
+
 	$('.next').on('click',function(){
 		currentsong += 1;
 		$('.music-name1').text(database[currentsong].title)
