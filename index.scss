@@ -415,11 +415,11 @@ $basetheme:#1b1b1b;
 					float: left;
 					background: url(./images/player_bg.png);
 					background-position-x: -408px;
-					background-position-y:0;
+					background-position-y:-2px;
 					&:hover{
 						background: url(./images/player_bg.png);
 						background-position-x: -408px;
-						background-position-y:-22px;
+						background-position-y:-24px;
 					}
 				};
 				.style2{
@@ -429,11 +429,11 @@ $basetheme:#1b1b1b;
 					float: left;
 					background: url(./images/player_bg.png);
 					background-position-x: -408px;
-					background-position-y:-44px;
+					background-position-y:-46px;
 					&:hover{
 						background: url(./images/player_bg.png);
 						background-position-x: -408px;
-						background-position-y:-66px;
+						background-position-y:-68px;
 					}
 				};
 				.style3{
@@ -442,12 +442,13 @@ $basetheme:#1b1b1b;
 					height: 22px;
 					float: left;
 					background: url(./images/player_bg.png);
-					background-position-x: -376px;
-					background-position-y:0;
+					background-size: 750px auto;
+					background-position-x: -352px;
+					background-position-y:3px;
 					&:hover{
 						background: url(./images/player_bg.png);
-						background-position-x: -376px;
-						background-position-y:-22px;
+						background-position-x: -352px;
+						background-position-y:-19px;
 					}
 				};
 				.style4{
