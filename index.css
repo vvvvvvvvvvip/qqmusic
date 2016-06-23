@@ -483,13 +483,13 @@ body ::-webkit-scrollbar-thumb:active {
   float: left;
   background: url(./images/player_bg.png);
   background-position-x: -408px;
-  background-position-y: 0;
+  background-position-y: -2px;
 }
 
 .huzhu .bottom .play-button .style-list .style1:hover {
   background: url(./images/player_bg.png);
   background-position-x: -408px;
-  background-position-y: -22px;
+  background-position-y: -24px;
 }
 
 .huzhu .bottom .play-button .style-list .style2 {
@@ -499,13 +499,13 @@ body ::-webkit-scrollbar-thumb:active {
   float: left;
   background: url(./images/player_bg.png);
   background-position-x: -408px;
-  background-position-y: -44px;
+  background-position-y: -46px;
 }
 
 .huzhu .bottom .play-button .style-list .style2:hover {
   background: url(./images/player_bg.png);
   background-position-x: -408px;
-  background-position-y: -66px;
+  background-position-y: -68px;
 }
 
 .huzhu .bottom .play-button .style-list .style3 {
@@ -514,14 +514,15 @@ body ::-webkit-scrollbar-thumb:active {
   height: 22px;
   float: left;
   background: url(./images/player_bg.png);
-  background-position-x: -376px;
-  background-position-y: 0;
+  background-size: 750px auto;
+  background-position-x: -352px;
+  background-position-y: 3px;
 }
 
 .huzhu .bottom .play-button .style-list .style3:hover {
   background: url(./images/player_bg.png);
-  background-position-x: -376px;
-  background-position-y: -22px;
+  background-position-x: -352px;
+  background-position-y: -19px;
 }
 
 .huzhu .bottom .play-button .style-list .style4 {
