@@ -110,6 +110,7 @@ $(function(){
         audio.src = database[ b ].filename;
     	audio.play();
     	var mark = $("#ul li").index( $(this) );
+    	console.log(mark)
     	$("#ul li").eq(mark).css({'color':'green'});
         $("#ul li").eq(mark).siblings('li').attr('style','color:#999');
         $('.music-name1').text(database[b].title);
