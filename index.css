@@ -135,7 +135,7 @@ body ::-webkit-scrollbar-thumb:active {
 
 .play-list ul {
   width: 529px;
-  height: 800px;
+  height: 575px;
 }
 
 .play-list ul li.play-hover {
