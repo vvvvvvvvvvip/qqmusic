@@ -55,6 +55,9 @@ $(function(){
 		else{
      		audio.pause();
 		}
+		var mark = $("#ul li").index( $(this) );
+    	$("#ul li").css({'color':'#999'});
+        $("#ul li").eq(currentsong).attr('style','color:green');
 	})
 	$('audio').on('play',function(){
 		$('#stop').removeClass('play-bt').addClass('pause-bt')
@@ -127,7 +130,6 @@ $(function(){
 	})
 	$('.play-list').on('click','li',function(){
 		var mark = $("#ul li").index( $(this) );
-		console.log(mark)
 		$("#ul li").eq(mark).css({'color':'green'})
 		audio.play()
 		$("#ul li").eq(mark).siblings('li').attr('style','color:#999');
@@ -146,7 +148,6 @@ $(function(){
 		$("#ul li").eq(currentsong).css({'color':'green'})
         $("#ul li").eq(currentsong).siblings('li').attr('style','color:#999');
 		if( currentsong === -1 ){
-			console.log(database.length)
 			currentsong = database.length-1;			
 		}
 		audio.src = database[ currentsong ].filename;
@@ -181,13 +182,11 @@ $(function(){
 	
 	$('#ul').on('click','.btn-del',function(){
 		var todelete = $(this).closest('li').index();
-		console.log(todelete)
 		database = $.grep(database,function(v,k){
 				return  k !== todelete;
 			})
 			$(this).closest('li').remove();
 			$('.play-list-icon span').text(database.length);
-			console.log(database.length)
 			return false;
 	})
 
