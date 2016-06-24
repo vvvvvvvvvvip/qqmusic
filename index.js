@@ -109,6 +109,11 @@ $(function(){
     	var b = a || currentsong;
         audio.src = database[ b ].filename;
     	audio.play();
+    	$("#ul li").eq(mark).css({'color':'green'});
+        $("#ul li").eq(mark).siblings('li').attr('style','color:#999');
+        $('.music-name1').text(database[b].title)
+		$('.pre2').text(database[b].artist)
+		$('.music-data').text(database[b].duration)
         // $('#ul li').removeClass('play_current');
         // alert(1)
         // $('#ul li').eq( currentsong ).addClass('play_current');
@@ -126,9 +131,9 @@ $(function(){
 		audio.play()
 		$("#ul li").eq(mark).siblings('li').attr('style','color:#999');
 		// $("#ul li").eq(mark) ~ li.css({'color':'#999'})
-		$('.music-name1').text(database[currentsong].title)
-		$('.pre2').text(database[currentsong].artist)
-		$('.music-data').text(database[currentsong].duration)
+		// $('.music-name1').text(database[currentsong].title)
+		// $('.pre2').text(database[currentsong].artist)
+		// $('.music-data').text(database[currentsong].duration)
 	})
 
 	//上一首 下一首
