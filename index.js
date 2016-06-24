@@ -111,9 +111,9 @@ $(function(){
     	audio.play();
     	$("#ul li").eq(mark).css({'color':'green'});
         $("#ul li").eq(mark).siblings('li').attr('style','color:#999');
-        $('.music-name1').text(database[b].title)
-		$('.pre2').text(database[b].artist)
-		$('.music-data').text(database[b].duration)
+        $('.music-name1').text(database[b].title);
+		$('.pre2').text(database[b].artist);
+		$('.music-data').text(database[b].duration);
         // $('#ul li').removeClass('play_current');
         // alert(1)
         // $('#ul li').eq( currentsong ).addClass('play_current');
